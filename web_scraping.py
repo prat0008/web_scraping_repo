@@ -49,11 +49,11 @@ print(df)
 df.to_csv("Product_Details.csv")"""
 
 
-import requests
-from bs4 import BeautifulSoup
-url = "https://webscraper.io/test-sites/e-commerce/allinone/computers/tablets"
-r = requests.get(url)
-soup = BeautifulSoup(r.text,"lxml")
+#import requests
+#from bs4 import BeautifulSoup
+#url = "https://webscraper.io/test-sites/e-commerce/allinone/computers/tablets"
+#r = requests.get(url)
+#soup = BeautifulSoup(r.text,"lxml")
 
 #boxes = soup.find_all("div",class_="col-md-4 col-xl-4 col-lg-4")
 #print(boxes)
@@ -67,6 +67,6 @@ soup = BeautifulSoup(r.text,"lxml")
 #description=box.find("p",class_="description card-text").text.strip()
 #print(description)
 
-nav_bar=soup.find("li",class_="nav-item")
-side_menu=soup.find("li",class_="nav-item active")
-print(side_menu.text)
+#nav_bar=soup.find("li",class_="nav-item")
+#side_menu=soup.find("li",class_="nav-item active")
+#print(side_menu.text)
