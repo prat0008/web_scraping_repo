@@ -1,5 +1,4 @@
 # web_scraping_repo
-
-Small project using web scraping
+web scraping practice
 <br>
 Made by Prateek Goel
