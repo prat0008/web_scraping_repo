@@ -59,14 +59,11 @@ soup = BeautifulSoup(r.text,"lxml")
 #print(boxes)
 #print(len(boxes))
 
-#box=soup.find_all("div",class_="col-md-4 col-xl-4 col-lg-4")[3]
+box = soup.find_all("div",class_="col-md-4 col-xl-4 col-lg-4")[3]
 #print(box)
 
-#name=box.find("a",class_="title").text.strip()
-#print(name)
-#description=box.find("p",class_="description card-text").text.strip()
-#print(description)
+name = box.find("a",class_="title")
+print(name)
 
-nav_bar=soup.find("li",class_="nav-item")
-side_menu=soup.find("li",class_="nav-item active")
-print(side_menu.text)
+description=box.find("p",class_="description card-text").text
+print(description)
