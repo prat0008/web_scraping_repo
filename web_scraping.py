@@ -23,5 +23,6 @@ for i in points_data[1:]:
     points_data=[tr.text.strip() for tr in data]
     l=len(df)
     df.loc[l]=points_data
+df = df.set_index('SR. NO.')
 print(df)
 df.to_csv("Tata_IPL-Auction_Stats.csv")
